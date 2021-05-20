@@ -1,0 +1,25 @@
+{
+  "name": "command-line-interface",
+  "version": "1.0.0",
+  "description": "https://nodejs.org/en/",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js --ignore db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erpua/command-line-interface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erpua/command-line-interface/issues"
+  },
+  "homepage": "https://github.com/erpua/command-line-interface#readme",
+  "devDependencies": {
+    "commander": "^7.2.0",
+    "nodemon": "^2.0.7",
+    "uuid": "^8.3.2"
+  }
+}
