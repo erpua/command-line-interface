@@ -1,5 +1,11 @@
 #command-line-interface
 
+Команды:
+npm start — старт сервера в режиме production
+npm run start:dev — старт сервера в режиме разработки (development)
+npm run lint — запустить выполнение проверки кода с eslint, необходимо выполнять перед каждым PR и исправлять все ошибки линтера
+npm lint:fix — та же проверка линтера, но с автоматическими исправлениями простых ошибок
+
 https://nodejs.org/en/
 
 - npm install --save-dev nodemon
@@ -20,9 +26,3 @@ node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-2
 # Удаляем контакт
 
 node index.js --action remove --id=3
-
-Команды:
-npm start — старт сервера в режиме production
-npm run start:dev — старт сервера в режиме разработки (development)
-npm run lint — запустить выполнение проверки кода с eslint, необходимо выполнять перед каждым PR и исправлять все ошибки линтера
-npm lint:fix — та же проверка линтера, но с автоматическими исправлениями простых ошибок
