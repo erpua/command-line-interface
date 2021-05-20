@@ -33,7 +33,7 @@ function getContactById(contactId) {
   });
 }
 
-function writeNewArr(path, newArr) {
+function updateContacts(path, newArr) {
   const contacts = JSON.stringify(newArr);
   fs.writeFile(path, contacts, (error) => {
     if (error) {
@@ -55,7 +55,7 @@ function removeContact(contactId) {
     );
 
     if (refreshContacts.length !== contacts.length) {
-      writeNewArr(contactsPath, refreshContacts);
+      updateContacts(contactsPath, refreshContacts);
       console.log('Contact removed.');
     } else {
       console.log('Contact not found.');
@@ -75,7 +75,7 @@ function addContact(name, email, phone) {
     const contacts = JSON.parse(data);
     const newContact = { id: uuidv4(), name, email, phone };
     const newContacts = [...contacts, newContact];
-    writeNewArr(contactsPath, newContacts);
+    updateContacts(contactsPath, newContacts);
 
     console.table(newContacts);
   });
