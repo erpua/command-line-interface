@@ -13,6 +13,10 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
+//process.cwd() => shows the root of compiling script
+
+// __dirname - is showing a compiling script (f.e. node index.js --action list )
+
 // TODO: рефакторить
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
