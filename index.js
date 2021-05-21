@@ -13,8 +13,8 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-// __dirname - is showing a compiling script
-//process.cwd() => shows the root of compiling script
+// console.log(__dirname) - is always showing the root of now compiling script
+//console.log(process.cwd()) => is showing the root, from where this script was called to compile
 
 // TODO: рефакторить
 function invokeAction({ action, id, name, email, phone }) {
