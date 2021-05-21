@@ -26,3 +26,7 @@ node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-2
 # Удаляем контакт
 
 node index.js --action remove --id=3
+
+//process.cwd() => shows the root of compiling file
+
+<!-- __dirname - it's showing a running file (f.e. node ) -->
