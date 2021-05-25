@@ -8,6 +8,7 @@ npm lint:fix — та же проверка линтера, но с автома
 
 https://nodejs.org/en/
 
+- npm packages--
 - npm install --save-dev nodemon
 - npm install --save-dev commander
 
